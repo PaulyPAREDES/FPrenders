@@ -1,0 +1,136 @@
+<!--carrito de compras-->
+<!DOCTYPE html >
+<html lang="es">
+<head>		
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">		
+<title>FP | servicio de renders | Alto valle</title>
+<meta name="author" content="PAREDES Paulina" />
+<meta name="keywords" content="Renders, Arquitectura, previsualizacion" />
+<meta name="description" content="servicio y producción de Renders">
+<link rel = "preconnect" href = "https://fonts.googleapis.com">
+<link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+<link type="text/css" rel="stylesheet" href="misestilos.css" />
+<script src="miscript.js" async></script>
+</head>
+<body>
+<nav id="nav">
+  <div id="menu">
+    <ul class="menuHorizontal">
+      <li ><a  href="Principal.html">PRINCIPAL</a></li>
+      <li >
+        <a href="#" >RENDERS</a>
+          <ul class="menuVertical">
+             <li><a href="exterior.html" target="_self" >EXTERIOR</a></li>
+             <li><a href="interior.html">INTERIOR</a></li>
+             <li><a href="plantasaxo.html">PLANTAS AXO</a></li>
+             <li><a href="imagen360.html">IMAGEN 360</a></li>
+          </ul>
+      </li>
+      <li><a href="#">VIDEOS</a>
+         <ul class="menuVertical">
+           <li><a href="videospromocionales.html" target="_self" > PROMOCIONALES</a></li>
+         </ul> 
+      </li>
+      <li>
+        <a href="carrito.html"  target="_self"  class="active">CARRITO</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+     <section class="contenedorCarrito">
+        <div class="contenedorItems">
+            <div class="item">
+                <img src="imagenes/exteriorCarrito.jpg" alt="" class="imagenProd">
+                <div class="tituloProducto">RENDERS EXTERIOR</div>
+                <div id="precio"> <h2>Precio</h2><span class="precioProd">$28000</span></div>
+                <img src="imagenes/carrito.png" id="signoCarrito" class="carritoAgregar">
+            </div>
+            <div class="item">
+                <img src="imagenes/interiorCarrito.jpg" alt="" class="imagenProd">
+                <div class="tituloProducto">RENDERS INTERIOR</div>
+                <div id="precio"> <h2>Precio</h2><span class="precioProd">$20000</span></div>
+                <img src="imagenes/carrito.png" id="signoCarrito" class="carritoAgregar">
+            </div>
+            <div class="item">
+                <img src="imagenes/planta axo.jpg" alt="" class="imagenProd">
+                <div class="tituloProducto">PLANTA AXO</div>
+                <div id="precio"> <h2>Precio</h2><span class="precioProd">$12000</span></div>
+                <img src="imagenes/carrito.png" id="signoCarrito" class="carritoAgregar">
+            </div>
+            <div class="item">
+                <img src="imagenes/ejvideoCarrito.jpg" alt="" class="imagenProd">
+                 <div class="tituloProducto">VIDEO</div>
+                 <div id="precio"> <h2>Precio</h2><span class="precioProd">$1500 p/s</span></div>
+                 <img src="imagenes/carrito.png" id="signoCarrito" class="carritoAgregar">
+            </div>
+        </div>
+<!--carrito de compras-->
+           <div class="carrito">
+              <div class="encabezadoCarrito">
+                <h2>TU CARRITO</h2>
+              </div>
+              <div class="carrito-items">
+
+                <!-- formato del item del carrito
+                <div class="carritoIt">
+                    <img src="imagenes/exteriorCarrito.jpg" id="imgProd" alt="">
+                    <div class="carritoItDetalles">
+                        <span class="carritoItTitulo"> RENDERS EXTERIOR</span>
+                        <div class="selectorCantidad">
+                           <img src="imagenes/signoMenos.png" class="restarCantidad" id="icono">
+                            <input type="text" value="1" class="carritoCantidad">
+                            <img src="imagenes/incremento.png" class="sumarCantidad" id="icono" >
+                        </div>
+                        <span class="carritoItemPrecio">$28000</span>
+                    </div>
+                    <span class="botonIliminar">
+                        <img src="imagenes/tarrito.png" id="botIliminar"> 
+                    </span>
+                </div>
+                </div> -->
+              </div>
+
+              <div class="Total">
+                  <div class="fila">
+                    <strong>TOTAL DE LA COMPRA:</strong>
+                    <span class="precioTotal">
+                      $0
+                    </span>
+                  </div>
+                  <button class="botonPagar">Pagar <img src="imagenes/bagCarrito.png" id="signoBag"></button>
+              </div>
+           </div>
+
+     </section>
+
+<footer class="footer">      
+   <div class="logoFooter">
+     <img src="imagenes/logofp.png" id="solologo">
+   </div>
+   <div class="informacion">
+              <p>FP Rennders <br>
+               <br>
+               ALTO-VALLE <br>
+               <br>
+               Email<br>
+               fpserviciorender@gmail.com<br>
+               <br>
+               Teléfono<br>
+               +54 299 5248430 | +54 298 4508982
+              </p> 
+   </div>
+   <div class="divPresupuesto">
+    <button id="button"><a href="presupuesto.html" target="_self">QUIERO UN PRESUPUESTO</a></button>
+   </div>
+   <div class="divRedes">
+      <div class="textoRedes">SEGUINOS!!</div>
+      <div class="imagenLogos">
+        <a href="https://www.facebook.com/FP-renders-103593488346402" target="_blank"><img src="imagenes/logofacebook.png" alt="logofacebook" id="logoredes"></a>
+        <a href="http://instagram.com/fp_renders" target="_blank"><img src="imagenes/logoinstagram.png" alt="logoinstagram" id="logoredes"></a>
+        <a href="https://api.whatsapp.com/send?phone=2995248430" target="_blank"><img src="imagenes/logowhasap.png" alt="logowhatsap" id="logoredes"></a>
+      </div>
+   </div>     
+</footer>
+</body>
+</html>

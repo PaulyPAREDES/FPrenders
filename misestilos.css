@@ -1,0 +1,604 @@
+@font-face{
+    font-family:"Negrita";
+    src: url('fuentes/Comfortaa-Bold.ttf');
+}
+@font-face{
+    font-family:"simple";
+    src: url('fuentes/Comfortaa-Light.ttf');
+}
+
+* { margin: 0; padding: 0; }
+
+/* --------------------------------------------Estilos para header------------------------------------------*/
+#header {
+    background-image: url(imagenes/imagenportada.png);
+    background-size:100%;
+    background-repeat: no-repeat;
+    min-height:100px;
+} 
+#logoNombre {
+    width: 100%;
+    max-height: 400px;
+    min-height:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2vw;
+    padding-top: 10vw;
+}
+.logo1 {
+    display: flex;
+    width: 17vw;
+    height: 17vw;
+   
+}
+#Nombre p {
+    font-family: "negrita";
+    font-size:7.2vw;
+    color: rgb(255, 255, 255);
+    position:relative;
+    margin-top: 10vw;
+}
+.divsub{
+    width: 100%;
+    max-height: 200px;
+    min-height:20px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 2vw;
+    padding-top: 2vw;
+}
+#subtitulo  {
+    font-family: "negrita";
+    font-size:3vw;
+    font-style: bold;
+    color: rgb(255, 255, 255);
+ }
+ .divslogan {
+    width: 100%;
+    max-height: 200px;
+    min-height:30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding-bottom: 3vw;
+   
+ }
+ #slogan{
+    font-family: "negrita";
+    font-size:1.6vw;
+    text-align: center;
+    color: rgb(255, 255, 255);
+ }
+
+/* -------------------------------------Estilos para el menu---------------------------------------*/
+ #nav {
+    background-color: #9d9d9c;
+    margin: auto;
+	height: 40px;
+    width:100%;
+    font-family: "simple";
+}
+ #menu{
+    background-color: #5f5d5d;
+	height: 40px;
+    width:auto;
+    float: right;
+    display: flex;
+ }
+.menuHorizontal{
+    list-style: none;
+    display: flex;
+    float: right;
+    justify-content: space-around;
+  
+}
+.menuHorizontal > li > a{
+    display: block;
+    padding: 11px 20px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.menuHorizontal > li:hover{
+    background-color: #ffffff;
+}
+.menuHorizontal li a:hover{
+    color:rgb(0, 0, 0);   
+}
+
+.menuVertical{
+   position: absolute; 
+   display: none;
+   list-style: none;
+   width: 12vw;
+   background-color:  #242323 ;
+}
+.menuHorizontal li:hover .menuVertical{
+    display: block;
+}
+.menuVertical li:hover{
+    background-color: #717070 ;
+}
+.menuVertical li a{
+    display: block;
+    color:rgb(255, 255, 255);
+    padding: 0.4vw;
+    text-decoration: none;
+}
+.menuVertical li a:hover{
+    color:rgb(255, 255, 255);  
+}
+
+ .active{
+    background-color: #20c311; 
+}
+
+
+.main{
+   width:100%;
+   height: 45vw;
+   background-color: rgb(255, 255, 255);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.contDerecho {
+    width:35%;
+    height:30vw;
+}
+#titulo1{
+    font-family: "negrita";
+    font-size: 3vw;
+    font-style: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 5vw;   
+}
+#divLista{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+#lista1 {
+    font-family: "negrita";
+    font-size:1.5vw;
+    color: #767474;
+    margin-top: 2vw; 
+}
+#lista1 li{
+    padding-bottom: 1vw;
+}
+.contIzquierdo {
+    width:35%;
+    height:30vw;
+}
+#titulo2{
+    font-family: "negrita";
+    font-size: 3vw;
+    font-style: bold;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: 5vw;   
+}
+#textop{
+    display: flex;
+    font-family: "simple";
+    font-size:1.1vw;
+    color: #767474;
+    margin-top: 2vw;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: justify;
+}
+
+/*-------------------------------------------------------Estilo footer---------------------------------------*/
+.footer {
+    background-color:#9d9d9c;
+    width:100%;
+    height:15vw;
+    display: flex;
+}
+.logoFooter{
+    width:25%;
+    height:15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#solologo {
+    position: static;
+    height: 12vw;
+    width: 12vw;
+}
+.informacion{
+    width:25%;
+    height:15vw;
+    font-family: "simple";
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.informacion p{
+    font-family: "simple";
+    font-size: 0.8vw;
+    color: rgb(255, 255, 255);
+    padding-left:5vw;
+    padding-top: 5vw;
+}
+.divPresupuesto{
+    width:25%;
+    height:100%;
+    display: flex;
+}
+.divPresupuesto:hover{
+    scale:1.1;
+    }
+#button{
+    display: flex;
+    border: 10px;
+    padding: 1vw 1vw ;
+    background-color: white;
+    border-radius: 50px;
+    height:3vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8vw ;
+    margin-left: 2.5vw;
+}
+#button a{
+    text-decoration: none;
+    font-family: "simple";
+    font-size: 1.2vw;
+    color: #000000;
+ }
+.divRedes{
+    width:25%;
+    height:100%;
+}
+.imagenLogos{
+    display: flex;
+    padding-top: 1vw;
+    justify-content: center;
+    align-items: center;
+}
+#logoredes {
+    height: 5vw;
+    width: 5vw; 
+}
+#logoredes:hover{
+    scale:1.5;
+    }
+.textoRedes {
+    font-family: "simple";
+    font-size: 1.3vw;
+    color: white;
+    padding-left: 8vw;
+    padding-top: 6vw;
+    display: flex;
+}
+/*------------------------------------------------------- ESTILO PAGINA 2 Renders------------------------------------*/
+
+#textoR{
+font-family: "simple";
+font-size: 1.2vw;
+color:  #767474;
+text-align: center;
+margin-top:4vw;
+margin-left: 1.5vw;
+height: 2vw;
+}
+
+.itemCarruzel{
+    height: 40vw;
+    overflow: hidden;
+    margin-top: 3vw;
+    margin-bottom: 5vw;
+}
+.contCarruzel{
+    height: 100%;
+    width:80vw;
+    position: relative;
+    margin-left: 10vw;
+}
+.carruzel{
+    height: 100%;
+}
+.flechasCarruzel{
+    position: absolute;
+    top:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2vw;
+    height: 90%;
+    width: 95%;
+}
+#imagenCarruzel{
+    height: 100%;
+    width:80vw;
+}
+#flechaI{
+    height: 3vw;
+    width: 3vw;
+}
+#flechaD{
+    height: 3vw;
+    width: 3vw;
+}
+/*----------------------------------------------------------- pagina animacion---------------------------------------------*/
+
+.contenedorAnimacion{
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 3vw;
+}
+
+.video1{
+    padding-left: 12vw;
+}
+.video2{
+    padding-right:12vw ;
+}
+#frameVideo{
+    width:30vw;
+    height:20vw;
+}
+/*--------------------------------------------------------------Formulario presupuesto----------------------------------------------------------------*/
+.main2{
+    width:100%;
+    height: 100%;
+    background-image: url(imagenes/hgd.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+.form{
+    background-color: #9d9d9c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5vw;
+    height: 34vw;
+    width: 30vw;
+    margin-top: 6vw;
+    margin-bottom: 6vw;
+}
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+.formulario input {
+    border-radius: 0.7vw;
+    padding: 0.4vw;
+    font-family: "simple";
+    font-size: 0.9vw;
+    margin-bottom: 0.5vw;
+    border-color:rgb(124, 123, 123) ;
+ }
+
+ #Descripcion { 
+    height: 8vw;
+ }
+ #tituloDesc{
+    font-family: "simple";
+    font-size: 0.9vw;
+    color: #ffffff;
+    margin-bottom: 0.5vw;
+ }
+
+ .formulario input[type="submit"] {
+     width:10vw;
+     background:#b41534;
+     color: white;
+     padding: 0.3vw;
+     align-self: flex-end;
+     cursor: pointer;
+ }
+ .formulario input[type="submit"]:hover {
+     background-color: #20c311;
+     scale:1.1;
+    
+ }
+ #mostarErrores{
+    font-family: "simple";
+    font-size: 0.9vw;
+ }
+/*--------------------------------------------Estilo carrito de compras------------------------------------------*/
+.contenedorCarrito{
+    max-width: 100%;
+    padding: 1vw;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.contenedorItems{
+    width: 50%;
+    margin-left: 5vw;
+}
+.item{
+    background-color: rgb(76, 78, 78);
+    display: flex;
+    border-radius: 1vw;
+    margin-top: 0;
+    margin-bottom: 0.6vw;
+    margin-left: 3vw;
+}
+.tituloProducto{
+    font-family: "simple";
+    font-size: 1.1vw;
+    color: #ffffff;
+    text-align: center;
+    width: 6vw;
+    padding: 2vw;
+    padding-top: 4vw;
+}
+.imagenProd{
+    width: 13vw;
+    height: 8vw;
+    margin: 1vw;
+    border:  solid 1px #ffffff;
+    border-radius: 0.5vw;
+}
+#precio {
+    background-color: rgb(255, 255, 255);
+    width: 8vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+#precio h2{
+    font-family: "negrita";
+    font-size: 1vw;
+    color: #060606;
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+    text-align: center;
+}
+#precio .precioProd{
+    font-family: "simple";
+    font-size: 1.1vw;
+    color:  #9d9d9c;
+    text-align: center;
+    padding-left: 2vw;
+}
+#signoCarrito{
+    margin-top: 4vw;
+    margin-left: 4vw;
+    width: 2.5vw;
+    height: 2.5vw;
+    cursor: pointer;
+}
+#signoCarrito:hover{
+    scale:1.07;
+    }
+    
+
+/*--------------------------------div carrito------------------------------------*/
+.carrito{
+    display: block;
+    border: 1px solid #9d9d9c;
+    width: 32%;
+    margin-right: 5vw;
+    border-radius: 1vw;
+    margin-bottom: 0;
+    margin-top: 4vw;
+    overflow: hidden;
+    position:sticky;
+}
+ .encabezadoCarrito{
+    background-color: #9d9d9c;
+    color:#000000;
+    text-align: center;
+    padding: 2vw 0;
+    font-family: "negrita";
+}
+ .carritoIt{
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid  #9d9d9c;
+    padding: 0.5vw;
+}
+ .carritoIt #imgProd{
+    margin-right: 3vw;
+    width: 10vw;
+    height: 6vw;
+    border-radius: 0.5vw;
+    border: 1px solid #000000;
+}
+.carritoItTitulo{
+    display: block;
+    font-family: "negrita";
+    font-size:0.8vw;
+    margin-bottom: 1vw;
+    text-transform: uppercase;
+    color: #000000;
+}
+
+.selectorCantidad{
+   display: inline-block;
+   padding-left: 0.5vw;
+   padding-right: 0.5vw;
+}
+.carritoCantidad{
+    border:none;
+    font-size: 1vw;
+    background: transparent;
+    display: inline-block;
+    width: 3vw;
+    padding: 0.5vw;
+    text-align: center;
+}
+ #icono{
+    width: 1vw;
+    height: 1vw;
+    border-radius: 50%;
+    border: 1px solid #9d9d9c;
+    cursor: pointer;
+}
+#signo:hover{
+    scale:0.9;
+    }
+.carritoItemPrecio{
+    font-family: "negrita";
+    display: inline-block;
+    font-size: 0.9vw;
+    margin-bottom: 0.7vw;
+    margin-left: 1.5vw;
+}
+.botonIliminar{
+    position: absolute;
+    margin-top: 1vw;
+    margin-left: 27vw;
+    width: 3vw;
+    height: 3vw;
+    line-height: 4vw;
+    text-align: center;
+    cursor: pointer;
+    display: block;
+    background:transparent ;
+}
+ #botIliminar{
+    width: 2vw;
+    height:2vw;
+    pointer-events: none;
+}
+.Total{
+background-color: #ffffff;
+padding: 0.5vw;
+}
+.fila{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "negrita";
+    font-size: 0.9vw;
+    margin-bottom: 1vw;
+    margin-top: 0.5vw;
+}
+.botonPagar{
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #000000;
+    color:#ffffff;
+    border-radius: 0.5vw;
+    font-size: 1vw;
+    padding: 1vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+#signoBag{
+    width: 2vw;
+    height: 2vw; 
+}
+.botonPagar:hover{
+scale:1.05;
+}
+
+
+
+
